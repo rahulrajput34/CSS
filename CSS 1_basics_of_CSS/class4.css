@@ -1,0 +1,12 @@
+button{
+    background-color: #414141;
+    color: rgb(245, 245, 247);
+    /* padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px; */
+    
+    /* same way */
+    padding: 50px 100px 50px 100px;
+    /*     top  right bottom left */
+}

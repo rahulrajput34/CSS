@@ -1,0 +1,48 @@
+<!-- absolute and relative -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellowgreen;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .class1 {
+            background-color: red;
+        }
+
+        .class2 {
+            background-color: pink;
+            position: relative;
+            top: 50px;
+            /* this is from its original position */
+        }
+
+        .class3 {
+            background-color: black;
+            position: absolute;
+            left: 100px;
+            bottom: 100px;
+            /* this is from its parent positon */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box class1"></div>
+    <div class="box class2"></div>
+    <div class="box class3"></div>
+</body>
+
+</html>

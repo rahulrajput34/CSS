@@ -1,0 +1,42 @@
+<!-- Transiion and tooltips -->
+<!-- transition helpful to give some time to doing some operation meant is give some smoothness to operation and tooltip is used to give some tips about eelement when we hover in the website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiion and tooltips</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            transition: width 3s, height 3s;
+            /* slow then fast and then slow */
+            /* transition-timing-function: ease; */
+            
+            /* The transition starts slowly and accelerates as it progresses */
+            /* transition-timing-function: ease-in; */
+
+            /* The transition starts quickly and decelerates as it progresses */
+            /* transition-timing-function: ease-out; */
+
+            /* The transition starts slowly, accelerates in the middle, and then slows down at the end. */
+            transition-timing-function: ease-in-out;
+            /* after two minutes transisition will happen */
+            transition-delay: 2s;
+
+        }
+
+        div:hover{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <!-- the below given hello bacho is tooltip when someone hove on the PW skills into the website that time the given toltip Hellow bacho will be shown -->
+    <p title="Hello bachho"> PW skills</p>
+</body>
+</html>

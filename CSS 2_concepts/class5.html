@@ -1,0 +1,54 @@
+<!-- Pseudo elements -->
+<!-- For Pseudo elements " :: " -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        /* give this properties to given first line */
+        .rahul::first-line{
+            color: yellow;
+            background-color: pink;
+        }
+        /* fisrt letter of the given text will get the given properties */
+        .rahul::first-letter{
+            color: rgb(16, 16, 14);
+            background-color: pink;
+        }
+        /* content will display before the given text */
+        .rahul::before{
+            content: "hello brother";
+            color: blueviolet;
+            background-color: violet;
+        }
+        /* content will displat after the given text */
+        .rahul::after{
+            content: "hello brother";
+            color: blueviolet;
+            background-color: violet;
+        }
+        /* when we select a text that time is would be shown that */
+        ::selection{
+            color: blue;
+            background-color: yellowgreen;
+        }
+        /* to mark a list */
+        ::marker{
+            color: red;
+        }
+       
+    </style>
+</head>
+<body>
+    <p class="rahul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus voluptate ipsum deserunt ipsa numquam exercitationem atque, temporibus, velit quasi quaerat id minima illum rerum, similique nam error sunt molestiae? Ducimus, molestias eligendi quae tempore illo ad recusandae, nulla asperiores quisquam excepturi laboriosam in nostrum. Vel voluptatibus quia et nostrum, assumenda debitis, aliquam delectus ut corporis neque earum quam. Tenetur, totam hic. Pariatur doloribus tempora harum numquam quia saepe ducimus quam error! Dicta provident dignissimos perferendis quia facilis molestiae libero nesciunt hic architecto repellendus. Officia nobis, corporis nam modi rem ut autem sint exercitationem aliquam alias mollitia nihil nemo sunt et voluptate nisi doloribus libero dignissimos dolorem neque minus amet voluptas ullam expedita! Sint laborum dolorum, veritatis dolor reprehenderit, explicabo sequi repellat sed a consectetur sit, excepturi aliquam numquam quia provident eius? Eaque, illo aperiam pariatur fuga autem optio sed nam nobis quaerat aliquid, vero laudantium, dicta saepe? Quos, aliquid? Molestiae numquam ex nam iusto nesciunt tenetur optio velit ad?
+    </p>
+    <ul>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ul>
+</body>
+</html>

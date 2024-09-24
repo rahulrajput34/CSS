@@ -1,0 +1,71 @@
+<!-- Flex container properties -->
+<!-- the difference between flex and inlineflex is the flex is get all the  width of given page and inline-flex is only want that much spance which it required -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        body {
+            background-color: yellow;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .class1 {
+            background-color: red;
+        }
+
+        .class2 {
+            background-color: aquamarine;
+        }
+
+        .class3 {
+            background-color: green;
+        }
+
+        .container{
+            display: flex;
+            height: 500px;
+            border: 1px solid red;
+            /* display: inline-flex; */
+            /* flex-wrap: wrap; */
+            /* when we reduce the size of screen that time element not change thier own size, instead it would go to next line */
+            /* flex-direction: column; */
+            /* flex-flow: wrap column; */
+            /* to give both properties togather */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: center; */
+            
+            /* align-items: center; */
+            /* it is same as justify content but it is on cross axis */
+            /* align-content: center; */
+            /* gap from all */
+            gap: 100px;
+            /* rowgap */
+            /* row-gap: 100px; */
+            /* column-gap */
+            /* column-gap: 100px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box class1">Box 1</div>
+        <div class="box class2">Box 2</div>
+        <div class="box class3">Box 3</div>
+    </div>
+</body>
+
+</html>

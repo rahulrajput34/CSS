@@ -1,0 +1,59 @@
+/* the given maxwidth and minwidth is used in most of code we can call it a standard size if we want */
+@media (max-width: 600px) {
+
+    /* very small mobiles */
+    body {
+        background-color: yellow;
+    }
+        div::after {
+            content: "I am div 1";
+        }
+}
+
+@media (min-width: 600px) {
+
+    /* mobiles like iphone 15 poro max, Samsang s23 ultra, tablates*/
+    body {
+        background-color: yellowgreen;
+    }
+
+    div::after {
+        content: "I am div 2";
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* tablates  Macbook*/
+    body {
+        background-color: pink;
+    }
+
+    div::after {
+        content: "I am div 3";
+    }
+}
+/* we can also write like this */
+@media (992 <= width <= 1200) {
+
+    /* laptops and computer and some tablates */
+    body {
+        background-color: red;
+    }
+
+    div::after {
+        content: "I am div 4";
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* laptops and bigger device */
+    body {
+        background-color: aquamarine;
+    }
+
+    div::after {
+        content: "I am div 5";
+    }
+}

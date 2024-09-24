@@ -1,0 +1,47 @@
+<!-- Overflow and Z-index  -->
+<!-- Overflow: it is simply means that when the content is exceed the limit of elementes where we should store the exceeding content -->
+<!-- z-index : the meaning of z-index is when the more than one elements come togather at one place than the elements which have more z index it will be shown on the webpage   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Z-index</title>
+    <style>
+        p{
+            height: 200px;
+            width: 200px;
+            border: 1px solid red;
+            overflow: hidden;
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            /* scroll and auto are same */
+        }
+
+        .one{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: absolute;
+            top: 0px;
+            z-index: 3;
+            /* z indez means priorotiy to element shown */
+            /* more z index element will shown more */
+        }
+        .two{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            position: absolute;
+            top: 50px;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error officiis fugit dicta. Nihil nemo aliquid eaque commodi accusamus maiores iusto eos modi facilis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. um doloremque, quos consequatur minima tempora eius distinctio id accusantium delectus eveniet deserunt itaque. Rem consequuntur repudiandae vel corrupti! Porro, beatae. Itaque aliquam dolorem aperiam debitis, officiis nisi vel saepe voluptates mollitia fuga? Temporibus consectetur alias deleniti sunt saepe, ipsam, modi dolor laborum nam incidunt, magnam accusamus quo nemo maxime iure repellat a exercitati=um delectus nam nostrum vero impedit repellendus laborum tempora porro vitae, inventore itaque, commodi dicta qui animi illo sunt? Quis quisquam adipisci suscipit, quam velit unde aperiam? Consequatur est pariatur iure, id n=ur corporis quo? Est atque maxime enim error repellat fuga assumenda repellendus. Aut minus eveniet voluptatem sapiente vero delectus necessitatibus itaque laborum eius, soluta dolores earum sed repellat optio dolorum accusantium rerum illo ducimus mollitia exercitationem impedit. Natus iusto veniam minus sint beatae. Ullam quibusdam, maxime rem alias delectus, praesentium dolorum molestiae quia veniam inventore quo perspiciatis! Tene consectetur similique totam molestiae accusamus animi ducimus dolor tempore officia at, illo delectus voluptatem laudantium impedit?</p>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

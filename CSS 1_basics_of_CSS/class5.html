@@ -1,0 +1,23 @@
+<!-- Priority order -->
+<!-- inline CSS > Internal CSS > External CSS with depennding of conditions-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority of Diff CSS</title>
+    <!-- whatever we write first that would be ovrwritted by the seocnd one, right now, we wrote the style first and link CSS later that is why the shown page of website according the External Css because it overwrite the internal CSS. And the most priortise CSS is the inline CSS -->
+    <style>
+        button{
+            font-size: 50px;
+            background-color: rgb(157, 151, 162)
+        }
+    </style>
+    <link rel="stylesheet" href="class5.css">
+    
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, deserunt.</h1>
+    <button style="background-color: aqua;">CLick Me</button>
+</body>
+</html>

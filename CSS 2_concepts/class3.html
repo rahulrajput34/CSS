@@ -1,0 +1,55 @@
+<!-- height, width and border box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width and height</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .width{
+            /* this one is simple width */
+            /* width: 200px; */
+            /* must minimum 400px, can max whaterver */
+            /* min-width: 400px; */
+            max-width: 400px;
+            border: 2px solid red;
+            display: inline-block;
+        }
+
+        .height{
+            /* Normal */
+            /* height: 200px; */
+            /* minimum height */
+            /* min-height: 100px; */
+            /* maximum height */
+            max-height: 100px;
+            background-color: yellow;
+            color: red;
+            overflow: hidden;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            display: inline-block;
+            padding: 20px;
+            /* below would create same sized boxes */
+            /* Using box-sizing: border-box; can be helpful in certain situations, especially when you want to ensure that the overall size of an element remains constant when you adjust the padding or border. This can make it easier to create layouts and designs without unexpected sizing issues. */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <p class="width">Lorem consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, saepe? Voluptatem delectus dignissimos explicabo quasi? Officiis ad laudantium amet laborum nesciunt facilis odio!</p>
+    <p class="height">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dolor cupiditate in, voluptate aut, a ipsa necessitatibus facere totam consectetur, laudantium laboriosam maxime aperiam nostrum! Tenetur optio eaque aliquam ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi, facere maxime tempore facilis quos quibusdam rem. Est exercitationem dolorum quasi quas provident! Animi fuga beatae excepturi, totam dolores id.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut nobis recusandae quidem, provident nisi repellat voluptate repellendus minima sapiente harum incidunt error deleniti sit ratione dolorum dignissimos accusamus facere. Voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum odio, numquam, doloribus modi itaque ipsa sit error optio sapiente maxime at vero dolore consequuntur quo amet. Totam, quis? Quam, dolorem! </p>
+    <p class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse similique quia alias?</p>
+    <p class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse similique quia alias?</p>
+    <p class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse similique quia alias?</p>
+</body>
+</html>

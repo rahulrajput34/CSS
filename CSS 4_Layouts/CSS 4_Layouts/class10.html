@@ -1,0 +1,65 @@
+<!-- Flex Items properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellow;
+            margin: 0px;
+            padding: 0px; 
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+        .container{
+            display: flex;
+            height: 500px;
+            width: 500px;
+            border: 1px solid red;
+        }
+
+        .class1 {
+            background-color: red;
+            /* order: 1; */
+            /* it simply mean that it give place the elements in assengidng orders by just giveing orders but we have to give display flex */
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
+            /* align-self helpful to give position to itself elelemt */
+            /* align-self: center; */
+        }
+
+        .class2 {
+            background-color: aquamarine;
+            /* order: 3; */
+            /* bigger the number bigger the space */
+            /* flex-grow: 3; */
+            /* flex-shrink: 5; */
+            /* flex-basis: 300px; */
+            /* flex basis means as soon as the web page getting rendered what should be the  space of that perticuler elemetns it is decided by flex baisis */
+        }
+
+        .class3 {
+            background-color: green;
+            /* order: 2; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 10; */
+            /* more the shrink number it would shrink first */
+            /* flex have three properties togather */
+            /* flex: flexgrow flexshrink flexbasis; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box class1">Box 1</div>
+        <div class="box class2">Box 2</div>
+        <div class="box class3">Box 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!-- 5.grid -->
+<!-- flex is only helpful to organize element in one dimentinal that is why grid is important because it organize elemetns in two direction -->
+<!-- like in mobile galary and other -->
+
+<!-- Grid template -->
+<!-- 1.grid column -->
+<!-- 2.grid row -->
+<!-- 3.grid area -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: grid;
+            height: 800px;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* upper one and below one are the same */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* minimus take 100px and maximum take 1fr */
+            grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+
+            /* This property is particularly useful for creating complex layouts with clear naming conventions. It works by defining a grid structure using a combination of names representing the areas you want to create. The grid-template-areas property uses a grid area syntax where each area name corresponds to a cell in the grid. */
+            /* konsi jagah kisko allot hogi uske liye */
+            grid-template-areas:
+                'header header header'
+                'sidebar main main'
+                'sidebar footer footer';
+
+            
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .class1 {
+            background-color: red;
+            grid-area: header;
+        }
+
+        .class2 {
+            background-color: yellow;
+        }
+
+        .class3 {
+            background-color: pink;
+        }
+
+        .class4 {
+            background-color: yellowgreen;
+        }
+
+        .class5 {
+            background-color: goldenrod;
+        }
+
+        .class6 {
+            background-color: purple;
+        }
+
+        .class7 {
+            background-color: violet;
+        }
+
+        .class8 {
+            background-color: orange;
+        }
+
+        .class9 {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="class1 box">Box 1</div>
+        <div class="class2 box">Box 2</div>
+        <div class="class3 box">Box 3</div>
+        <div class="class4 box">Box 4</div>
+        <div class="class5 box">Box 5</div>
+        <div class="class6 box">Box 6</div>
+        <div class="class7 box">Box 7</div>
+        <div class="class8 box">Box 8</div>
+        <div class="class9 box">Box 9</div>
+    </div>
+</body>
+
+</html>

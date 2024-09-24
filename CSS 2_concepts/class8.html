@@ -1,0 +1,100 @@
+<!-- Animations -->
+<!-- We do not need to remmber it, we can chat gpt a\\it annd get more information about all the animation -->
+<!-- An animation lets an element graduallt change from one style to another -->
+<!-- when animation is finished ot would come again in its original position -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        /* animation-name: colorchange;
+        animation-duration: 10s; */
+        /* animation-delay: 2s; */
+        /* number of time this operation going to perform is called i=animantion itreation */
+        /* animation-iteration-count: 3; */
+        /* animation-iteration-count: 1; */
+        /* animation-direction: reverse; */
+        /* animation-direction: alternate-reverse; */
+        
+        /* The transition starts slowly and accelerates as it progresses */
+        /* animation-timing-function: ease-in; */
+
+        /* slow then fast and then slow */
+        /* animation-timing-function: ease;  */
+        
+        /* lenear in all */
+        /* animation-timing-function: linear; */
+
+        /* The transition starts quickly and decelerates as it progresses */
+        /* animation-timing-function: ease-out; */
+
+        /* The transition starts slowly, accelerates in the middle, and then slows down at the end. */
+        /* animation-timing-function: ease-in-out;
+
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+        
+        /* means not turning back to original position it would rewrite the last position to the original position */
+        /* animation-fill-mode: forwards; */
+
+        /* come again to its oroginal position  */
+        /* animation-fill-mode: backwards; */
+
+        /* whereever it goes last one the last one become its color */
+        /* animation-fill-mode: both; */
+
+        /* animation-fill-mode: none; */
+
+        /* we can give all the properties on one line */
+        
+        animation: colorchange 8s ease 3s infinite reverse none;
+        /* color, duration, timingfunction, delay, iterator, direction,  fill-mode*/
+
+
+    }
+
+    @keyframes colorchange{
+        from{background-color: yellowgreen;}
+        to{background-color: palegreen;}
+
+        /* here the percentage is percentage of time */
+        0%{
+            background-color: black;
+            left: 0px;
+            top: 0px;
+        }
+        25%{
+            background-color: aqua;
+            left: 300px;
+            top: 0px;
+        }
+        50%{
+            background-color: violet;
+            left: 300px;
+            top: 300px;
+        }
+        75%{
+            background-color: green;
+            left: 0px;
+            top: 300px;
+        }
+        100%{
+            background-color: peru;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
